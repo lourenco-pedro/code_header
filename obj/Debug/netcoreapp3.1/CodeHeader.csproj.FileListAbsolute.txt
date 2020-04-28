@@ -1,0 +1,11 @@
+C:\Users\pedro\Documents\Applications\CodeHeader\bin\Debug\netcoreapp3.1\CodeHeader.exe
+C:\Users\pedro\Documents\Applications\CodeHeader\bin\Debug\netcoreapp3.1\CodeHeader.deps.json
+C:\Users\pedro\Documents\Applications\CodeHeader\bin\Debug\netcoreapp3.1\CodeHeader.runtimeconfig.json
+C:\Users\pedro\Documents\Applications\CodeHeader\bin\Debug\netcoreapp3.1\CodeHeader.runtimeconfig.dev.json
+C:\Users\pedro\Documents\Applications\CodeHeader\bin\Debug\netcoreapp3.1\CodeHeader.dll
+C:\Users\pedro\Documents\Applications\CodeHeader\bin\Debug\netcoreapp3.1\CodeHeader.pdb
+C:\Users\pedro\Documents\Applications\CodeHeader\obj\Debug\netcoreapp3.1\CodeHeader.csprojAssemblyReference.cache
+C:\Users\pedro\Documents\Applications\CodeHeader\obj\Debug\netcoreapp3.1\CodeHeader.AssemblyInfoInputs.cache
+C:\Users\pedro\Documents\Applications\CodeHeader\obj\Debug\netcoreapp3.1\CodeHeader.AssemblyInfo.cs
+C:\Users\pedro\Documents\Applications\CodeHeader\obj\Debug\netcoreapp3.1\CodeHeader.dll
+C:\Users\pedro\Documents\Applications\CodeHeader\obj\Debug\netcoreapp3.1\CodeHeader.pdb

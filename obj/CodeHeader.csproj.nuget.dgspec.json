@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedro\\Documents\\Applications\\CodeHeader\\CodeHeader.csproj": {}
+    "C:\\Users\\pedro\\Documents\\Applications\\Github Public Repository\\CodeHeader\\code_header\\CodeHeader.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedro\\Documents\\Applications\\CodeHeader\\CodeHeader.csproj": {
+    "C:\\Users\\pedro\\Documents\\Applications\\Github Public Repository\\CodeHeader\\code_header\\CodeHeader.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\Documents\\Applications\\CodeHeader\\CodeHeader.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\Documents\\Applications\\Github Public Repository\\CodeHeader\\code_header\\CodeHeader.csproj",
         "projectName": "CodeHeader",
-        "projectPath": "C:\\Users\\pedro\\Documents\\Applications\\CodeHeader\\CodeHeader.csproj",
+        "projectPath": "C:\\Users\\pedro\\Documents\\Applications\\Github Public Repository\\CodeHeader\\code_header\\CodeHeader.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\Documents\\Applications\\CodeHeader\\obj\\",
+        "outputPath": "C:\\Users\\pedro\\Documents\\Applications\\Github Public Repository\\CodeHeader\\code_header\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",

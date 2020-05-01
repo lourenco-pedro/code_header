@@ -1,46 +1,58 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace CodeHeader
 {
     class Program
     {
 
-        public static string Path;
-
         static void Main(string[] args)
         {
-            Console.WriteLine("Insert project root folder: ");
-            Path = Console.ReadLine();
+            List<string> FilesPath = new List<string>();
 
-            if (!Directory.Exists(Path))
+            Console.WriteLine("Insert project root folder: ");
+            string path = Console.ReadLine();
+
+            Console.WriteLine("Insert desired File Extension (without . ): ");
+            string extension = Console.ReadLine();
+
+            if (!Directory.Exists(path))
             {
                 Log.DirectoryExpection(DirectoryExpection.NULL_DIR);
                 return;
             }
 
-            var allFiles = GetFilesInPath(Path);
-
-            DEV.LogStringArray(allFiles);
+            GetFilesInPath(path, extension, FilesPath);
+            AddHeader(FilesPath);
         }
 
-        static string[] GetFilesInPath(string Path)
+        static void GetFilesInPath(string path, string extension, List<string> filesPath)
         {
-            var files = Directory.GetFiles(Path, "*.cs");
-            var dirs = Directory.GetDirectories(Path);
+            var files = Directory.GetFiles(path, "*." + extension);
+            var dirs = Directory.GetDirectories(path);
+
+            foreach (var file in files)
+            {
+                filesPath.Add(file);
+            }
 
             foreach (var dir in dirs)
             {
-                var returnedFiles = GetFilesInPath(dir);
-                Array.Resize(ref files, files.Length + returnedFiles.Length);
-
-                for (int i = files.Length - returnedFiles.Length; i < files.Length; i++)
-                {
-                    string newFile = returnedFiles[i];
-                }
+                GetFilesInPath(dir, extension, filesPath);
             }
+        }
 
-            return files;
+        static void AddHeader(List<string> FilesPath)
+        {
+            var headerLayout = File.ReadAllText(Constants.HEADER_LAYOUT_PATH);
+
+            foreach (var path in FilesPath)
+            {
+                var file = File.ReadAllText(path);
+                File.WriteAllText(path, headerLayout + "\n \n \n" + file);
+                Console.WriteLine("Added Header to {0} file", path);
+            }
         }
     }
 }

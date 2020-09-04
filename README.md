@@ -1,11 +1,16 @@
 # code_header
- Add owner header to your code files using CodeHeader <br>
+Add owner headers to your files using CodeHeader
  
  ## How to use it
 
-Execute the Application located in <i>bin\Debug\netcoreapp3.1\CodeHeader.exe</i>
-<br>He will ask you to insert the Root folder to add header to all files inside that Root. And to finish, expecify what file extension this program will seek for to add the Header.
+In your command line, just go to the code_header folder and then type the follwing command
 
-## Costumize your Header
+````cs
+dotnet run rootFolderPath desiredExtensionToModify headerTemplatePath
+````
 
-To costumize your header, just edit the file located <i>bin\Debug\netcoreapp3.1\header.txt</i>. 
+Where:
+
+**rootFolderPath** is going to be the root folder where all the desired files will be located<br>
+**desiredExtensionToModify** is going to be the desired extension you want code_header seek for to add the header, it is not necessary to add the '.'(period) before file extension type.<br>
+**headerTemplatePath** is going to be the path of the header template file.there is already a header.txt inside the code_header folder, where you can use it.  

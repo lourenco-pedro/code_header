@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pedro\\Documents\\Applications\\Github Public Repository\\CodeHeader\\code_header\\CodeHeader.csproj",
+      "projectUniqueName": "C:\\Users\\pedro\\Documents\\Projects\\code_header\\CodeHeader.csproj",
       "projectName": "CodeHeader",
-      "projectPath": "C:\\Users\\pedro\\Documents\\Applications\\Github Public Repository\\CodeHeader\\code_header\\CodeHeader.csproj",
+      "projectPath": "C:\\Users\\pedro\\Documents\\Projects\\code_header\\CodeHeader.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pedro\\Documents\\Applications\\Github Public Repository\\CodeHeader\\code_header\\obj\\",
+      "outputPath": "C:\\Users\\pedro\\Documents\\Projects\\code_header\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

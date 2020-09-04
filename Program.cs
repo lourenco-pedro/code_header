@@ -9,22 +9,31 @@ namespace CodeHeader
 
         static void Main(string[] args)
         {
-            List<string> FilesPath = new List<string>();
-
-            Console.WriteLine("Insert project root folder: ");
-            string path = Console.ReadLine();
-
-            Console.WriteLine("Insert desired File Extension (without . ): ");
-            string extension = Console.ReadLine();
-
-            if (!Directory.Exists(path))
+            if (args.Length == 3)
             {
-                Log.DirectoryExpection(DirectoryExpection.NULL_DIR);
-                return;
-            }
 
-            GetFilesInPath(path, extension, FilesPath);
-            AddHeader(FilesPath);
+                List<string> FilesPath = new List<string>();
+
+                string path = args[0];
+                string extension = args[1];
+                string headerTemplatePath = args[2];
+
+                if (!Directory.Exists(path))
+                {
+                    Log.DirectoryExpection(DirectoryExpection.NULL_DIR);
+                    return;
+                }
+
+                GetFilesInPath(path, extension, FilesPath);
+
+                string header = File.ReadAllText(headerTemplatePath);
+
+                AddHeader(FilesPath, header);
+            }
+            else
+            {
+                Console.WriteLine("No path or file extension added");
+            }
         }
 
         static void GetFilesInPath(string path, string extension, List<string> filesPath)
@@ -43,14 +52,12 @@ namespace CodeHeader
             }
         }
 
-        static void AddHeader(List<string> FilesPath)
+        static void AddHeader(List<string> FilesPath, string header)
         {
-            var headerLayout = File.ReadAllText(Constants.HEADER_LAYOUT_PATH);
-
             foreach (var path in FilesPath)
             {
                 var file = File.ReadAllText(path);
-                File.WriteAllText(path, headerLayout + "\n \n \n" + file);
+                File.WriteAllText(path, header + "\n \n \n" + file);
                 Console.WriteLine("Added Header to {0} file", path);
             }
         }
